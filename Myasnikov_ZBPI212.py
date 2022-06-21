@@ -43,10 +43,7 @@ def is_palindrome(string):
         if string[i] != string[l-1-i]:
             is_pln = False
             break
-    if is_pln:
-        print('YES')
-    else:
-        print('NO')
+    return is_pln
 
 # 6
 
@@ -92,6 +89,7 @@ def substring_slice(path2file_1,path2file_2):
     for i in range(len(lines1)):
         a, b = lines2[i].split()
         result += lines1[i][int(a):int(b) + 1] + ' '
+    result = result[:-1]
     return result
 
 # 8
